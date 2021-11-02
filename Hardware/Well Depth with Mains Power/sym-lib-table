@@ -1,0 +1,3 @@
+(sym_lib_table
+  (lib (name well-monitor)(type Legacy)(uri ${EWB}/well-monitor.lib)(options "")(descr ""))
+)
