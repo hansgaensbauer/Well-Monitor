@@ -20,3 +20,7 @@ This hardware is for projects that require more monitoring than is possible with
 * Relay for controlling external HV/HC loads
 * Temperature sensor frontend
 * Low power modes
+
+##Setup
+
+To view/edit the KiCAD schematic, with KiCAD open, go to Preferences -> Configure Paths, and add a new environment variable called "EWB" that points to Well-Monitor\Hardware\lib. 
