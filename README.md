@@ -21,6 +21,6 @@ This hardware is for projects that require more monitoring than is possible with
 * Temperature sensor frontend
 * Low power modes
 
-##Setup
+## Setup
 
 To view/edit the KiCAD schematic, with KiCAD open, go to Preferences -> Configure Paths, and add a new environment variable called "EWB" that points to Well-Monitor\Hardware\lib. 
