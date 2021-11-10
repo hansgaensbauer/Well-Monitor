@@ -28,3 +28,14 @@ This hardware is for projects that require more monitoring than is possible with
 ## Setup
 
 To view/edit the KiCAD schematic, with KiCAD open, go to Preferences -> Configure Paths, and add a new environment variable called "EWB" that points to Well-Monitor\Hardware\lib. 
+
+## To-Do
+* Create installation documentation
+* Create Arduino-style pinout diagram
+* Implement RTC firmware
+
+## Known Issues
+### V0
+* Reset button needs silkscreen
+* DTR pin needs clamping diodes
+
