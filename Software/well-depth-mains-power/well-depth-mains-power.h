@@ -33,4 +33,6 @@
 
   #define PSI_TO_MH2O 0.703070
 
+  const uint8_t  SPRINTF_BUFFER_SIZE{32};  // Buffer size for sprintf()
+
  #endif //WDMP_H_

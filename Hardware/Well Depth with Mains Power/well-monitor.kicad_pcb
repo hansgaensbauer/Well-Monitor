@@ -2680,7 +2680,7 @@
   (gr_text RESET (at 129.75 108) (layer F.SilkS)
     (effects (font (size 1.5 1.5) (thickness 0.3)))
   )
-  (gr_text "Well Monitor V0\nEWB-SFP" (at 134.75 78.5) (layer F.SilkS)
+  (gr_text "Well Monitor V1\nEWB-SFP" (at 134.75 78.5) (layer F.SilkS)
     (effects (font (size 2 2) (thickness 0.3)))
   )
   (gr_text ISP (at 156.25 86.25) (layer F.SilkS) (tstamp 6183D890)
