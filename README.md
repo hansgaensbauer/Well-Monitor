@@ -5,7 +5,9 @@ This hardware is for projects that require more monitoring than is possible with
 
 ![Isometric View of V1](https://github.com/hansgaensbauer/Well-Monitor/blob/main/Hardware/Well%20Depth%20with%20Mains%20Power/Pictures/iso_view_v1.png?raw=true)
 
-![V1 Arduino Pinout](https://github.com/hansgaensbauer/Well-Monitor/blob/main/Hardware/Well%20Depth%20with%20Mains%20Power/Documentation/arduino-pinout.png?raw=true)
+<p align="center">
+  <img src="https://github.com/hansgaensbauer/Well-Monitor/blob/main/Hardware/Well%20Depth%20with%20Mains%20Power/Documentation/arduino-pinout.png?raw=true" alt="V1 Arduino Pinout/>
+</p>
 
 ## Features
 * Onboard SD card for data logging over months/years
