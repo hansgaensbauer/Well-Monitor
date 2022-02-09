@@ -24,3 +24,16 @@ fp-info-cache
 # Exported BOM files
 *.xml
 *.csv
+
+# gitignore template for LTspice
+# website: https://www.analog.com/en/design-center/design-tools-and-calculators/ltspice-simulator.html
+
+# Logfile
+*.log
+
+# Simulation Outputs
+*.raw
+*.fft
+
+# Netlist
+*.net
