@@ -2041,7 +2041,7 @@
   (symbol (lib_id "Device:R_Small") (at 171.45 77.47 90) (unit 1)
     (in_bom yes) (on_board yes)
     (uuid 6865f8e4-e926-4cd4-a0c9-5f9de5b1f65c)
-    (property "Reference" "R18" (id 0) (at 171.45 74.93 90))
+    (property "Reference" "R18" (id 0) (at 171.45 81.28 90))
     (property "Value" "330" (id 1) (at 171.45 79.398 90))
     (property "Footprint" "Resistor_SMD:R_0402_1005Metric" (id 2) (at 171.45 77.47 0)
       (effects (font (size 1.27 1.27)) hide)
@@ -2151,7 +2151,7 @@
   (symbol (lib_id "Device:R_Small") (at 124.46 100.33 180) (unit 1)
     (in_bom yes) (on_board yes)
     (uuid 860c370c-8ce3-45b3-854f-48797382da6c)
-    (property "Reference" "R?" (id 0) (at 124.46 95.25 0))
+    (property "Reference" "R6" (id 0) (at 124.46 95.25 0))
     (property "Value" "~" (id 1) (at 124.46 95.25 0))
     (property "Footprint" "Resistor_SMD:R_0402_1005Metric" (id 2) (at 124.46 100.33 0)
       (effects (font (size 1.27 1.27)) hide)
@@ -2427,8 +2427,8 @@
   (symbol (lib_id "Device:R_Small") (at 163.83 82.55 0) (unit 1)
     (in_bom yes) (on_board yes)
     (uuid d10dd2da-6a53-4197-8bea-b93f530bb0dd)
-    (property "Reference" "R17" (id 0) (at 166.37 82.55 90))
-    (property "Value" "330" (id 1) (at 161.902 82.55 90))
+    (property "Reference" "R17" (id 0) (at 160.02 83.82 0))
+    (property "Value" "330" (id 1) (at 160.02 81.28 0))
     (property "Footprint" "Resistor_SMD:R_0402_1005Metric" (id 2) (at 163.83 82.55 0)
       (effects (font (size 1.27 1.27)) hide)
     )
@@ -2855,6 +2855,9 @@
     (path "/d3d12e2a-1f1a-45a6-a3d2-4eda6ad02342"
       (reference "R5") (unit 1) (value "100") (footprint "Resistor_SMD:R_0402_1005Metric")
     )
+    (path "/860c370c-8ce3-45b3-854f-48797382da6c"
+      (reference "R6") (unit 1) (value "~") (footprint "Resistor_SMD:R_0402_1005Metric")
+    )
     (path "/4a250130-af4d-4ae2-823a-e5173c28bea0"
       (reference "R7") (unit 1) (value "10k") (footprint "Resistor_SMD:R_0402_1005Metric")
     )
@@ -2878,9 +2881,6 @@
     )
     (path "/6865f8e4-e926-4cd4-a0c9-5f9de5b1f65c"
       (reference "R18") (unit 1) (value "330") (footprint "Resistor_SMD:R_0402_1005Metric")
-    )
-    (path "/860c370c-8ce3-45b3-854f-48797382da6c"
-      (reference "R?") (unit 1) (value "~") (footprint "Resistor_SMD:R_0402_1005Metric")
     )
     (path "/41c8e294-2b28-4d75-b1ec-e326133a3d04"
       (reference "RV1") (unit 1) (value "10k") (footprint "Potentiometer_THT:Potentiometer_Vishay_T73YP_Vertical")
