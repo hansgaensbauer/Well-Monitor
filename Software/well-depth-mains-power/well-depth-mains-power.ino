@@ -6,13 +6,16 @@
  */
 
  //includes
- #include <SPI.h>
- #include <SD.h>
- #include <MCP7940.h>  // Include the MCP7940 RTC library
- #include "well-depth-mains-power.h" //custom h file with board-specific pin defines
+ //#include <SPI.h>
+ //#include <SD.h>
+ //#include <MCP7940.h>  // Include the MCP7940 RTC library
+ //#include "well-depth-mains-power.h" //custom h file with board-specific pin defines
+// #include "TMP117.h"  //REMOVE
 
- MCP7940_Class MCP7940;                           // Create an instance of the MCP7940
- char inputBuffer[SPRINTF_BUFFER_SIZE];  // Buffer for sprintf()/sscanf()
+ //TMP117 tmp(0x48);   //REMOVE
+
+ //MCP7940_Class MCP7940;                           // Create an instance of the MCP7940
+// char inputBuffer[SPRINTF_BUFFER_SIZE];  // Buffer for sprintf()/sscanf()
 
  void setup() {
   //pin configuration
@@ -20,7 +23,9 @@
   
   Serial.begin(9600);
   while(!Serial); //wait for Serial
+  Serial.println("Checking Power Fail");
 
+/*
   if (!SD.begin(SD_CS_N)){
     Serial.println("SD Initialization Failed");
     //flash the LED forever to indicate SD card failure
@@ -35,14 +40,13 @@
   } else {
     sd_fail_handler(); //fail
   }
-
   while (!MCP7940.begin()); //Wait for the RTC
 
   //MCP7940 Code taken directly from SimpleBatteryBackup example in MCP7940 library
-
+ 
   if (MCP7940.getPowerFail()) {  // Check for a power failure
-    Serial.println(F("Power failure mode detected!\n"));
-    Serial.print(F("Power failed at   "));
+    Serial.println("Power failure mode detected!\n");
+    Serial.print("Power failed at   ");
     DateTime now = MCP7940.getPowerDown();                      // Read when the power failed
     sprintf(inputBuffer, "....-%02d-%02d %02d:%02d:..",         // Use sprintf() to pretty print
             now.month(), now.day(), now.hour(), now.minute());  // date/time with leading zeros
@@ -67,7 +71,8 @@
         delay(1000);                                                   // wait for a second
       }                // of if-then oscillator didn't start
     }                  // of while the oscillator is off
-    MCP7940.adjust();  // Set to library compile Date/Time
+    //determine whether the 
+    MCP7940.adjust();  // Set to library compile Date/Time    
     Serial.println(F("Enabling battery backup mode"));
     MCP7940.setBattery(true);     // enable battery backup mode
     if (!MCP7940.getBattery()) {  // Check if successful
@@ -76,7 +81,7 @@
   }                          // of if-then-else we have detected a priorpower failure
   
   logfile.close();
-
+*/
 }
 
 void loop() {
@@ -88,7 +93,8 @@ void loop() {
  * Samples well depth and time and writes a line to the SD card
  */
 void record(){
-  float depth = measure_well_depth();
+  /*
+  float temp = tmp.getTemperature();
   
   DateTime now = MCP7940.now();  // get the current time
   sprintf(inputBuffer, "%04d-%02d-%02d, %02d:%02d:%02d, ",
@@ -99,12 +105,13 @@ void record(){
   File logfile = SD.open("welldata.csv", FILE_WRITE);
   if (logfile){
     logfile.print(inputBuffer);
-    logfile.print(depth);
+    logfile.print(temp);
     logfile.println();
     logfile.close();
   } else {
     sd_fail_handler(); //fail
   }
+  */
 }
 
 /*

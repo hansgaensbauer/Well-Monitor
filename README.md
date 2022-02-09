@@ -37,9 +37,7 @@ To view/edit the KiCAD schematic, with KiCAD open, go to Preferences -> Configur
 
 ## To-Do
 * Create installation documentation
-* Create Arduino-style pinout diagram
 * Create LED diagnostic guide
-* Implement RTC firmware
 * Create BOM
 
 ## Known Issues
