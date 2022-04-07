@@ -1,9 +1,0 @@
-EESchema-DOCLIB  Version 2.0
-#
-$CMP PSK-5D-24
-D Enclosed AC DC Converters 1 Uitgang 24V - - - 208mA 85 ~ 305 VAC, 100 ~ 430 VDC Input
-K AC DC Converter 5W 24V
-F https://www.cui.com/product/resource/psk-5d.pdf
-$ENDCMP
-#
-#End Doc Library

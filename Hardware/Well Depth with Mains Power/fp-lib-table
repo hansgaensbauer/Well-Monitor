@@ -1,3 +1,0 @@
-(fp_lib_table
-  (lib (name well-monitor)(type KiCad)(uri ${EWB}/well-monitor.pretty)(options "")(descr ""))
-)

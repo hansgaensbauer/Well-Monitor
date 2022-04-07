@@ -1,3 +1,0 @@
-(sym_lib_table
-  (lib (name well-monitor)(type Legacy)(uri ${KIPRJMOD}/well-monitor.lib)(options "")(descr ""))
-)

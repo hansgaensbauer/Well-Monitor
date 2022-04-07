@@ -26,34 +26,10 @@ This device is intended for installations that have access to 120-220V 50-60Hz p
 
 ![Photo of Assembled V0](https://github.com/hansgaensbauer/Well-Monitor/blob/main/Pictures/photo_v0.jpg?raw=true)
 
-### Features
-* Onboard SD card for data logging over months/years
-* Supports 120 and 240V input
-* Onboard RTC w/ battery backup for accurate timestamping even in the event of a power outage
-* Support for 24V pressure sensors with current output
-* Arduino IDE programmable with USB serial
-* Expansion terminal blocks for additional sensors
-* Simple, robust construction for long lifetime
-* Low BOM cost
-* Low power modes
-
-### Optional/Desired Features
-* Upload data to the internet
-* Integrated PV/battery power supply
-* Relay for controlling external HV/HC loads
-* Temperature sensor frontend
-* Fits into COTS enclosure
-
 The well monitor uses the CY7C65213A USB-Serial converter. Windows users should go to https://www.cypress.com/documentation/software-and-drivers/usb-serial-software-development-kit (registration/login required) to download and install the drivers. 
 
 The device can be programmed through the Arduino IDE. Under Tools -> Board, select Arduino Uno. 
 
-### To-Do
-* Create installation documentation
-* Create LED diagnostic guide
-* Create BOM
-
-### Known Issues
-
-
+## Simulation
+The WaterSys-PV Notebook can simulate a complete photovoltaic pump installation by combining weather data with simulated conversion, pumping, and usage parameters. 
 
