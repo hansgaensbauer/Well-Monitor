@@ -3655,23 +3655,6 @@
     (pin "2" (uuid 57842c5a-c1d1-4a43-a762-ada73e9febdb))
   )
 
-  (symbol (lib_id "Mechanical:MountingHole") (at 140.97 39.37 0) (unit 1)
-    (in_bom yes) (on_board yes) (fields_autoplaced)
-    (uuid 89c4924b-9262-42f1-a4c5-29cb8a3e67b0)
-    (property "Reference" "H4" (id 0) (at 143.51 38.4615 0)
-      (effects (font (size 1.27 1.27)) (justify left))
-    )
-    (property "Value" "MountingHole" (id 1) (at 143.51 41.2366 0)
-      (effects (font (size 1.27 1.27)) (justify left))
-    )
-    (property "Footprint" "MountingHole:MountingHole_3.2mm_M3" (id 2) (at 140.97 39.37 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "~" (id 3) (at 140.97 39.37 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-  )
-
   (symbol (lib_id "Amplifier_Operational:LM358") (at 105.41 151.13 0) (mirror x) (unit 2)
     (in_bom yes) (on_board yes)
     (uuid 8aefe1fe-1622-46e9-9bc2-6b58c54642e7)
@@ -4270,7 +4253,7 @@
     (property "Value" "USB_A" (id 1) (at 154.432 77.9022 0)
       (effects (font (size 1.27 1.27)) (justify right))
     )
-    (property "Footprint" "Connector_USB:USB_A_Molex_67643_Horizontal" (id 2) (at 144.78 77.47 0)
+    (property "Footprint" "Connector_USB:USB_A_Molex_105057_Vertical" (id 2) (at 144.78 77.47 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" " ~" (id 3) (at 144.78 77.47 0)
@@ -4693,9 +4676,6 @@
     (path "/2a2d87e6-4c9b-4686-99ad-cc9cc88e17ae"
       (reference "H3") (unit 1) (value "MountingHole") (footprint "MountingHole:MountingHole_3.2mm_M3")
     )
-    (path "/89c4924b-9262-42f1-a4c5-29cb8a3e67b0"
-      (reference "H4") (unit 1) (value "MountingHole") (footprint "MountingHole:MountingHole_3.2mm_M3")
-    )
     (path "/dd9eb823-0ce6-40ba-88dd-0922cd3c375c"
       (reference "J1") (unit 1) (value "Conn_01x02_Female") (footprint "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical")
     )
@@ -4709,7 +4689,7 @@
       (reference "J4") (unit 1) (value "Conn_01x02_Male") (footprint "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical")
     )
     (path "/eac5442d-319a-4688-a3db-4a4027c3734b"
-      (reference "J5") (unit 1) (value "USB_A") (footprint "Connector_USB:USB_A_Molex_67643_Horizontal")
+      (reference "J5") (unit 1) (value "USB_A") (footprint "Connector_USB:USB_A_Molex_105057_Vertical")
     )
     (path "/55fe9388-2515-47be-8ff8-75dd7e5bdfd0"
       (reference "JP1") (unit 1) (value "SolderJumper_2_Open") (footprint "Resistor_SMD:R_0603_1608Metric")

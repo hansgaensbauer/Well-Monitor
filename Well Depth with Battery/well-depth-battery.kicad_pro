@@ -346,7 +346,7 @@
     "pinned_symbol_libs": []
   },
   "meta": {
-    "filename": "depth-sensor.kicad_pro",
+    "filename": "well-depth-battery.kicad_pro",
     "version": 1
   },
   "net_settings": {
@@ -380,7 +380,7 @@
       "idf": "",
       "netlist": "",
       "specctra_dsn": "",
-      "step": "",
+      "step": "well-depth-battery.step",
       "vrml": ""
     },
     "page_layout_descr_file": ""
