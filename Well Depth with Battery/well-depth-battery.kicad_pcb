@@ -140,7 +140,7 @@
 
   (footprint "Capacitor_SMD:C_0402_1005Metric" (layer "F.Cu")
     (tedit 5F68FEEE) (tstamp 09c6ca89-863f-42d4-867e-9a769c316610)
-    (at 88.75 99.6375 180)
+    (at 88.03 99.9925 180)
     (descr "Capacitor SMD 0402 (1005 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: IPC-SM-782 page 76, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf), generated with kicad-footprint-generator")
     (tags "capacitor")
     (property "Sheetfile" "well-depth-battery.kicad_sch")
@@ -182,7 +182,7 @@
 
   (footprint "Package_TO_SOT_SMD:SOT-23" (layer "F.Cu")
     (tedit 5FA16958) (tstamp 11f8ac59-56bf-4d1a-8ad3-b4e0fd1dc52f)
-    (at 103.25 97 180)
+    (at 102.53 97.355 180)
     (descr "SOT, 3 Pin (https://www.jedec.org/system/files/docs/to-236h.pdf variant AB), generated with kicad-footprint-generator ipc_gullwing_generator.py")
     (tags "SOT TO_SOT_SMD")
     (property "Sheetfile" "well-depth-battery.kicad_sch")
@@ -229,7 +229,7 @@
 
   (footprint "Capacitor_SMD:C_0402_1005Metric" (layer "F.Cu")
     (tedit 5F68FEEE) (tstamp 1c10afe0-5886-4b8e-82fe-b4df69c407ee)
-    (at 94.75 107.47 90)
+    (at 94.03 107.825 90)
     (descr "Capacitor SMD 0402 (1005 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: IPC-SM-782 page 76, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf), generated with kicad-footprint-generator")
     (tags "capacitor")
     (property "Sheetfile" "well-depth-battery.kicad_sch")
@@ -271,7 +271,7 @@
 
   (footprint "Resistor_SMD:R_0402_1005Metric" (layer "F.Cu")
     (tedit 5F68FEEE) (tstamp 1c72f17e-d445-4a58-842c-0dfdfce350d3)
-    (at 105.75 97 90)
+    (at 105.03 97.355 90)
     (descr "Resistor SMD 0402 (1005 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: IPC-SM-782 page 72, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf), generated with kicad-footprint-generator")
     (tags "resistor")
     (property "Sheetfile" "well-depth-battery.kicad_sch")
@@ -313,7 +313,7 @@
 
   (footprint "Capacitor_SMD:C_0402_1005Metric" (layer "F.Cu")
     (tedit 5F68FEEE) (tstamp 1d7026ad-e7ce-455a-bbec-9db9975b9151)
-    (at 105 105.79 90)
+    (at 104.28 106.145 90)
     (descr "Capacitor SMD 0402 (1005 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: IPC-SM-782 page 76, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf), generated with kicad-footprint-generator")
     (tags "capacitor")
     (property "Sheetfile" "well-depth-battery.kicad_sch")
@@ -355,7 +355,7 @@
 
   (footprint "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" (layer "F.Cu")
     (tedit 59FED5CC) (tstamp 2151a218-87ec-4d43-b5fa-736242c52602)
-    (at 79.225 78.5 90)
+    (at 78.75 78.5 90)
     (descr "Through hole straight pin header, 1x02, 2.54mm pitch, single row")
     (tags "Through hole pin header THT 1x02 2.54mm single row")
     (property "Sheetfile" "well-depth-battery.kicad_sch")
@@ -393,7 +393,7 @@
       (net 31 "/TXD") (pinfunction "Pin_1") (pintype "passive") (tstamp a6dc1180-19c4-432b-af49-fc9179bb4519))
     (pad "2" thru_hole oval (at 0 2.54 90) (size 1.7 1.7) (drill 1) (layers *.Cu *.Mask)
       (net 32 "/RXD") (pinfunction "Pin_2") (pintype "passive") (tstamp 4c8704fa-310a-4c01-8dc1-2b7e2727fea0))
-    (model "${KICAD6_3DMODEL_DIR}/Connector_PinHeader_2.54mm.3dshapes/PinHeader_1x02_P2.54mm_Vertical.wrl"
+    (model "${KICAD6_3DMODEL_DIR}/Connector_PinHeader_2.54mm.3dshapes/PinHeader_1x02_P2.54mm_Vertical.wrl" hide
       (offset (xyz 0 0 0))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))
@@ -402,7 +402,7 @@
 
   (footprint "Capacitor_SMD:C_0402_1005Metric" (layer "F.Cu")
     (tedit 5F68FEEE) (tstamp 22df74e7-4d34-42bf-850f-da14c7fd1281)
-    (at 105.375 100.25 90)
+    (at 104.655 100.605 90)
     (descr "Capacitor SMD 0402 (1005 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: IPC-SM-782 page 76, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf), generated with kicad-footprint-generator")
     (tags "capacitor")
     (property "Sheetfile" "well-depth-battery.kicad_sch")
@@ -444,7 +444,7 @@
 
   (footprint "Capacitor_SMD:C_0402_1005Metric" (layer "F.Cu")
     (tedit 5F68FEEE) (tstamp 251669f2-aed1-46fe-b2e4-9582ff1e4084)
-    (at 90.57 97.23 90)
+    (at 89.85 97.585 90)
     (descr "Capacitor SMD 0402 (1005 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: IPC-SM-782 page 76, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf), generated with kicad-footprint-generator")
     (tags "capacitor")
     (property "Sheetfile" "well-depth-battery.kicad_sch")
@@ -486,7 +486,7 @@
 
   (footprint "Capacitor_SMD:C_0402_1005Metric" (layer "F.Cu")
     (tedit 5F68FEEE) (tstamp 263e9b7e-c3cd-4442-851e-d2b54de99d8e)
-    (at 105.5 107.27 180)
+    (at 104.78 107.625 180)
     (descr "Capacitor SMD 0402 (1005 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: IPC-SM-782 page 76, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf), generated with kicad-footprint-generator")
     (tags "capacitor")
     (property "Sheetfile" "well-depth-battery.kicad_sch")
@@ -528,7 +528,7 @@
 
   (footprint "Resistor_SMD:R_0402_1005Metric" (layer "F.Cu")
     (tedit 5F68FEEE) (tstamp 2717f789-6e9a-45e5-ba68-0e97a483a090)
-    (at 79 81.51 90)
+    (at 78.532 81.51 90)
     (descr "Resistor SMD 0402 (1005 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: IPC-SM-782 page 72, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf), generated with kicad-footprint-generator")
     (tags "resistor")
     (property "Sheetfile" "well-depth-battery.kicad_sch")
@@ -570,7 +570,7 @@
 
   (footprint "Resistor_SMD:R_0402_1005Metric" (layer "F.Cu")
     (tedit 5F68FEEE) (tstamp 2cdac68d-7c68-4dee-83f4-c82da698979f)
-    (at 105.25 109.26 90)
+    (at 104.53 109.615 90)
     (descr "Resistor SMD 0402 (1005 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: IPC-SM-782 page 72, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf), generated with kicad-footprint-generator")
     (tags "resistor")
     (property "Sheetfile" "well-depth-battery.kicad_sch")
@@ -612,7 +612,7 @@
 
   (footprint "Crystal:Crystal_SMD_MicroCrystal_CM9V-T1A-2Pin_1.6x1.0mm" (layer "F.Cu")
     (tedit 5D24C13B) (tstamp 2f4c659c-2ccb-4fb1-808e-7868af588a89)
-    (at 88.57 97.23 180)
+    (at 87.85 97.585 180)
     (descr "SMD Crystal MicroCrystal CM9V-T1A series https://www.microcrystal.com/fileadmin/Media/Products/32kHz/Datasheet/CM9V-T1A.pdf, 1.6x1.0mm^2 package")
     (tags "SMD SMT crystal")
     (property "Sheetfile" "well-depth-battery.kicad_sch")
@@ -656,7 +656,7 @@
 
   (footprint "Resistor_SMD:R_0402_1005Metric" (layer "F.Cu")
     (tedit 5F68FEEE) (tstamp 315d2b15-cfe6-4672-b3ad-24773f3df12c)
-    (at 93.5 88.76 90)
+    (at 92.78 89.115 90)
     (descr "Resistor SMD 0402 (1005 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: IPC-SM-782 page 72, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf), generated with kicad-footprint-generator")
     (tags "resistor")
     (property "Sheetfile" "well-depth-battery.kicad_sch")
@@ -698,7 +698,7 @@
 
   (footprint "Resistor_SMD:R_0402_1005Metric" (layer "F.Cu")
     (tedit 5F68FEEE) (tstamp 3382bf79-b686-4aeb-9419-c8ab591662bb)
-    (at 107 105.75 90)
+    (at 106.28 106.105 90)
     (descr "Resistor SMD 0402 (1005 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: IPC-SM-782 page 72, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf), generated with kicad-footprint-generator")
     (tags "resistor")
     (property "Sheetfile" "well-depth-battery.kicad_sch")
@@ -740,7 +740,7 @@
 
   (footprint "Capacitor_SMD:C_0805_2012Metric" (layer "F.Cu")
     (tedit 5F68FEEE) (tstamp 348dc703-3cab-4547-b664-e8b335a6083c)
-    (at 88.57 84.23 180)
+    (at 88.102 84.23 180)
     (descr "Capacitor SMD 0805 (2012 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: IPC-SM-782 page 76, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf, https://docs.google.com/spreadsheets/d/1BsfQQcO9C6DZCsRaXUlFlo91Tg2WpOkGARC1WS5S8t0/edit?usp=sharing), generated with kicad-footprint-generator")
     (tags "capacitor")
     (property "Sheetfile" "well-depth-battery.kicad_sch")
@@ -782,14 +782,14 @@
 
   (footprint "Connector_USB:USB_A_Molex_105057_Vertical" (layer "F.Cu")
     (tedit 5C671087) (tstamp 414f80f7-b2d5-43c3-a018-819efe44fe30)
-    (at 83.5 116.385)
+    (at 82.5 118)
     (descr "https://www.molex.com/pdm_docs/sd/1050570001_sd.pdf")
     (tags "USB A Vertical")
     (property "Sheetfile" "well-depth-battery.kicad_sch")
     (property "Sheetname" "")
     (path "/eac5442d-319a-4688-a3db-4a4027c3734b")
     (attr through_hole)
-    (fp_text reference "J5" (at 4.4 -7.05) (layer "F.SilkS")
+    (fp_text reference "J5" (at 4.148 -6.695) (layer "F.SilkS")
       (effects (font (size 1 1) (thickness 0.15)))
       (tstamp 0a3cc030-c9dd-4d74-9d50-715ed2b361a2)
     )
@@ -840,7 +840,7 @@
 
   (footprint "Resistor_SMD:R_0402_1005Metric" (layer "F.Cu")
     (tedit 5F68FEEE) (tstamp 41dd8dbe-60e2-416e-bb81-b16a7ee0f28c)
-    (at 107.63 103.5325 180)
+    (at 107.162 103.5325 180)
     (descr "Resistor SMD 0402 (1005 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: IPC-SM-782 page 72, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf), generated with kicad-footprint-generator")
     (tags "resistor")
     (property "Sheetfile" "well-depth-battery.kicad_sch")
@@ -851,7 +851,7 @@
       (effects (font (size 1 1) (thickness 0.15)))
       (tstamp f5707a39-7e4e-416d-b856-204502394794)
     )
-    (fp_text value "2.2k" (at 0 1.17) (layer "F.Fab")
+    (fp_text value "2.2k" (at 0.252 0.815) (layer "F.Fab")
       (effects (font (size 1 1) (thickness 0.15)))
       (tstamp 01fb1e6b-cb11-499c-98a0-6bff6dff5959)
     )
@@ -882,7 +882,7 @@
 
   (footprint "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical" (layer "F.Cu")
     (tedit 59FED5CC) (tstamp 475da62c-4191-4a2f-9bbc-249deb6d8df7)
-    (at 74.2 84.5 90)
+    (at 73.75 84.5 90)
     (descr "Through hole straight pin header, 1x04, 2.54mm pitch, single row")
     (tags "Through hole pin header THT 1x04 2.54mm single row")
     (property "Sheetfile" "well-depth-battery.kicad_sch")
@@ -928,7 +928,7 @@
 
   (footprint "Capacitor_SMD:C_0402_1005Metric" (layer "F.Cu")
     (tedit 5F68FEEE) (tstamp 4b471778-f61d-4b9d-a507-3d4f82ec4b7c)
-    (at 90.73 99.6375)
+    (at 90.01 99.9925)
     (descr "Capacitor SMD 0402 (1005 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: IPC-SM-782 page 76, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf), generated with kicad-footprint-generator")
     (tags "capacitor")
     (property "Sheetfile" "well-depth-battery.kicad_sch")
@@ -970,7 +970,7 @@
 
   (footprint "Capacitor_SMD:C_0402_1005Metric" (layer "F.Cu")
     (tedit 5F68FEEE) (tstamp 526a7a5e-afe2-4029-a038-8c14d846f3f2)
-    (at 96.875 100.5 90)
+    (at 96.155 100.855 90)
     (descr "Capacitor SMD 0402 (1005 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: IPC-SM-782 page 76, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf), generated with kicad-footprint-generator")
     (tags "capacitor")
     (property "Sheetfile" "well-depth-battery.kicad_sch")
@@ -1012,7 +1012,7 @@
 
   (footprint "Capacitor_SMD:C_0402_1005Metric" (layer "F.Cu")
     (tedit 5F68FEEE) (tstamp 54093c93-5e7e-4c8d-8d94-40c077747c12)
-    (at 86.57 96.73 90)
+    (at 85.85 97.085 90)
     (descr "Capacitor SMD 0402 (1005 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: IPC-SM-782 page 76, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf), generated with kicad-footprint-generator")
     (tags "capacitor")
     (property "Sheetfile" "well-depth-battery.kicad_sch")
@@ -1054,7 +1054,7 @@
 
   (footprint "Package_TO_SOT_SMD:SOT-223-6" (layer "F.Cu")
     (tedit 5A02FF57) (tstamp 5fba7ff8-02f1-4ac0-93c4-5bd7becbcf63)
-    (at 89.23 104.6375 -90)
+    (at 88.51 104.9925 -90)
     (descr "module CMS SOT223 6 pins, http://www.ti.com/lit/ds/symlink/tps737.pdf")
     (tags "CMS SOT")
     (property "Sheetfile" "well-depth-battery.kicad_sch")
@@ -1098,16 +1098,16 @@
       (net 41 "unconnected-(U6-Pad5)") (pinfunction "NC") (pintype "no_connect") (tstamp 2ba21493-929b-4122-ac0f-7aeaf8602cef))
     (pad "6" smd rect (at 3.1625 0 270) (size 2.15 3.45) (layers "F.Cu" "F.Paste" "F.Mask")
       (net 1 "GND") (pinfunction "GND") (pintype "power_in") (tstamp 8aa8d47e-f495-4049-8ac9-7f2ac3205412))
-    (model "${KICAD6_3DMODEL_DIR}/Package_TO_SOT_SMD.3dshapes/SOT-223-6.wrl"
+    (model "${EWB}/3d/sot-223-6.STEP"
       (offset (xyz 0 0 0))
       (scale (xyz 1 1 1))
-      (rotate (xyz 0 0 0))
+      (rotate (xyz -90 0 90))
     )
   )
 
   (footprint "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical" (layer "F.Cu")
     (tedit 59FED5CC) (tstamp 629fdb7a-7978-43d0-987e-b84465775826)
-    (at 86.2 78.5 90)
+    (at 85.75 78.5 90)
     (descr "Through hole straight pin header, 1x04, 2.54mm pitch, single row")
     (tags "Through hole pin header THT 1x04 2.54mm single row")
     (property "Sheetfile" "well-depth-battery.kicad_sch")
@@ -1149,7 +1149,7 @@
       (net 30 "/SWDIO") (pinfunction "Pin_3") (pintype "passive") (tstamp 7c6e532b-1afd-48d4-9389-2942dcbc7c3c))
     (pad "4" thru_hole oval (at 0 7.62 90) (size 1.7 1.7) (drill 1) (layers *.Cu *.Mask)
       (net 1 "GND") (pinfunction "Pin_4") (pintype "passive") (tstamp d53baa32-ba88-4646-9db3-0e9b0f0da4f0))
-    (model "${KICAD6_3DMODEL_DIR}/Connector_PinHeader_2.54mm.3dshapes/PinHeader_1x04_P2.54mm_Vertical.wrl"
+    (model "${KICAD6_3DMODEL_DIR}/Connector_PinHeader_2.54mm.3dshapes/PinHeader_1x04_P2.54mm_Vertical.wrl" hide
       (offset (xyz 0 0 0))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))
@@ -1158,7 +1158,7 @@
 
   (footprint "Diode_SMD:D_SOD-323" (layer "F.Cu")
     (tedit 58641739) (tstamp 653e74f0-0a40-4ab5-8f5c-787bbaf1d723)
-    (at 103.5 86)
+    (at 103.032 86)
     (descr "SOD-323")
     (tags "SOD-323")
     (property "Sheetfile" "well-depth-battery.kicad_sch")
@@ -1207,7 +1207,7 @@
 
   (footprint "Package_SO:SOP-8_3.9x4.9mm_P1.27mm" (layer "F.Cu")
     (tedit 5D9F72B1) (tstamp 67ddd466-4c05-43d1-b9c1-73558050f6fc)
-    (at 101.125 101.75)
+    (at 100.405 102.105)
     (descr "SOP, 8 Pin (http://www.macronix.com/Lists/Datasheet/Attachments/7534/MX25R3235F,%20Wide%20Range,%2032Mb,%20v1.6.pdf#page=79), generated with kicad-footprint-generator ipc_gullwing_generator.py")
     (tags "SOP SO")
     (property "Sheetfile" "well-depth-battery.kicad_sch")
@@ -1255,7 +1255,7 @@
       (net 20 "Net-(R13-Pad2)") (pintype "output") (tstamp e2eaff9d-4c94-4311-bec0-a13146b760ca))
     (pad "8" smd roundrect locked (at 2.625 -1.905) (size 1.65 0.6) (layers "F.Cu" "F.Paste" "F.Mask") (roundrect_rratio 0.25)
       (net 9 "VDD") (pinfunction "V+") (pintype "power_in") (tstamp e66cdece-4893-4be4-8985-52fc83792731))
-    (model "${KICAD6_3DMODEL_DIR}/Package_SO.3dshapes/SOP-8_3.9x4.9mm_P1.27mm.wrl"
+    (model "${KICAD6_3DMODEL_DIR}/Package_SO.3dshapes/SOIC-8_3.9x4.9mm_P1.27mm.step"
       (offset (xyz 0 0 0))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))
@@ -1264,7 +1264,7 @@
 
   (footprint "Capacitor_SMD:C_0402_1005Metric" (layer "F.Cu")
     (tedit 5F68FEEE) (tstamp 68d14432-223b-47bb-bd26-18873cfb3df2)
-    (at 106.25 109.26 90)
+    (at 105.53 109.615 90)
     (descr "Capacitor SMD 0402 (1005 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: IPC-SM-782 page 76, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf), generated with kicad-footprint-generator")
     (tags "capacitor")
     (property "Sheetfile" "well-depth-battery.kicad_sch")
@@ -1306,7 +1306,7 @@
 
   (footprint "Resistor_SMD:R_0402_1005Metric" (layer "F.Cu")
     (tedit 5F68FEEE) (tstamp 6a1ae8ee-dea6-4015-b83e-baf8fcdfaf0f)
-    (at 102.25 88.5 -90)
+    (at 101.53 88.855 -90)
     (descr "Resistor SMD 0402 (1005 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: IPC-SM-782 page 72, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf), generated with kicad-footprint-generator")
     (tags "resistor")
     (property "Sheetfile" "well-depth-battery.kicad_sch")
@@ -1348,7 +1348,7 @@
 
   (footprint "Package_TO_SOT_SMD:SOT-23" (layer "F.Cu")
     (tedit 5FA16958) (tstamp 75c56b73-e91e-4c3e-8fb7-792f0cb19b7b)
-    (at 107.63 101.0325 90)
+    (at 106.91 101.3875 90)
     (descr "SOT, 3 Pin (https://www.jedec.org/system/files/docs/to-236h.pdf variant AB), generated with kicad-footprint-generator ipc_gullwing_generator.py")
     (tags "SOT TO_SOT_SMD")
     (property "Sheetfile" "well-depth-battery.kicad_sch")
@@ -1395,7 +1395,7 @@
 
   (footprint "Resistor_SMD:R_0402_1005Metric" (layer "F.Cu")
     (tedit 5F68FEEE) (tstamp 784e3230-2053-4bc9-a786-5ac2bd0df0f5)
-    (at 105.75 110.77 180)
+    (at 105.03 111.125 180)
     (descr "Resistor SMD 0402 (1005 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: IPC-SM-782 page 72, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf), generated with kicad-footprint-generator")
     (tags "resistor")
     (property "Sheetfile" "well-depth-battery.kicad_sch")
@@ -1437,7 +1437,7 @@
 
   (footprint "MountingHole:MountingHole_3.2mm_M3" (layer "F.Cu")
     (tedit 56D1B4CB) (tstamp 7aec2799-4000-4098-a752-1bed4b75fdcf)
-    (at 74.75 114.5)
+    (at 73.5 115.5)
     (descr "Mounting Hole 3.2mm, no annular, M3")
     (tags "mounting hole 3.2mm no annular m3")
     (property "Sheetfile" "well-depth-battery.kicad_sch")
@@ -1463,7 +1463,7 @@
 
   (footprint "Resistor_SMD:R_0402_1005Metric" (layer "F.Cu")
     (tedit 5F68FEEE) (tstamp 7b859b76-0528-49b2-a54e-fd6560111b42)
-    (at 106.75 98 90)
+    (at 106.03 98.355 90)
     (descr "Resistor SMD 0402 (1005 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: IPC-SM-782 page 72, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf), generated with kicad-footprint-generator")
     (tags "resistor")
     (property "Sheetfile" "well-depth-battery.kicad_sch")
@@ -1505,7 +1505,7 @@
 
   (footprint "LED_SMD:LED_0805_2012Metric" (layer "F.Cu")
     (tedit 5F68FEF1) (tstamp 843b53af-dd34-4db8-aa6b-5035b25affc7)
-    (at 94 98 90)
+    (at 93.28 98.355 90)
     (descr "LED SMD 0805 (2012 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: https://docs.google.com/spreadsheets/d/1BsfQQcO9C6DZCsRaXUlFlo91Tg2WpOkGARC1WS5S8t0/edit?usp=sharing), generated with kicad-footprint-generator")
     (tags "LED")
     (property "Sheetfile" "well-depth-battery.kicad_sch")
@@ -1549,7 +1549,7 @@
 
   (footprint "Capacitor_SMD:C_0402_1005Metric" (layer "F.Cu")
     (tedit 5F68FEEE) (tstamp 84aac022-880b-473d-82ad-f2827a88892f)
-    (at 81.5 81.5 90)
+    (at 81.032 81.5 90)
     (descr "Capacitor SMD 0402 (1005 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: IPC-SM-782 page 76, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf), generated with kicad-footprint-generator")
     (tags "capacitor")
     (property "Sheetfile" "well-depth-battery.kicad_sch")
@@ -1591,7 +1591,7 @@
 
   (footprint "Resistor_SMD:R_0603_1608Metric" (layer "F.Cu")
     (tedit 5F68FEEE) (tstamp 89bd1fdd-6a91-474e-8495-7a2ba7eb6260)
-    (at 92.07 82.73 180)
+    (at 91.602 82.73 180)
     (descr "Resistor SMD 0603 (1608 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: IPC-SM-782 page 72, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf), generated with kicad-footprint-generator")
     (tags "resistor")
     (property "Sheetfile" "well-depth-battery.kicad_sch")
@@ -1633,7 +1633,7 @@
 
   (footprint "Resistor_SMD:R_0402_1005Metric" (layer "F.Cu")
     (tedit 5F68FEEE) (tstamp 8c7ad431-18a5-4197-b13f-e4bbf0da7038)
-    (at 103.5 105.27)
+    (at 102.78 105.625)
     (descr "Resistor SMD 0402 (1005 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: IPC-SM-782 page 72, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf), generated with kicad-footprint-generator")
     (tags "resistor")
     (property "Sheetfile" "well-depth-battery.kicad_sch")
@@ -1675,7 +1675,7 @@
 
   (footprint "MountingHole:MountingHole_3.2mm_M3" (layer "F.Cu")
     (tedit 56D1B4CB) (tstamp 99f42b58-88eb-419e-9dff-f13059ef50e4)
-    (at 98.5 82.25 90)
+    (at 98.5 82.5 90)
     (descr "Mounting Hole 3.2mm, no annular, M3")
     (tags "mounting hole 3.2mm no annular m3")
     (property "Sheetfile" "well-depth-battery.kicad_sch")
@@ -1701,7 +1701,7 @@
 
   (footprint "Package_TO_SOT_SMD:SOT-23" (layer "F.Cu")
     (tedit 5FA16958) (tstamp 9e427954-2486-4c91-89b5-6af73a073442)
-    (at 92.07 85.73 90)
+    (at 91.602 85.73 90)
     (descr "SOT, 3 Pin (https://www.jedec.org/system/files/docs/to-236h.pdf variant AB), generated with kicad-footprint-generator ipc_gullwing_generator.py")
     (tags "SOT TO_SOT_SMD")
     (property "Sheetfile" "well-depth-battery.kicad_sch")
@@ -1712,7 +1712,7 @@
       (effects (font (size 1 1) (thickness 0.15)))
       (tstamp 43f341b3-06e9-4e7a-a26e-5365b89d76bf)
     )
-    (fp_text value "Q_PMOS_GSD" (at 0 2.4 90) (layer "F.Fab")
+    (fp_text value "Q_PMOS_GSD" (at -0.355 2.148 90) (layer "F.Fab")
       (effects (font (size 1 1) (thickness 0.15)))
       (tstamp 4d51bc15-1f84-46be-8e16-e836b10f854e)
     )
@@ -1748,7 +1748,7 @@
 
   (footprint "Capacitor_SMD:C_0402_1005Metric" (layer "F.Cu")
     (tedit 5F68FEEE) (tstamp a1a89e2c-c297-4307-a1ff-efd1e2a95a5d)
-    (at 74 81.51 90)
+    (at 73.532 81.51 90)
     (descr "Capacitor SMD 0402 (1005 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: IPC-SM-782 page 76, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf), generated with kicad-footprint-generator")
     (tags "capacitor")
     (property "Sheetfile" "well-depth-battery.kicad_sch")
@@ -1790,7 +1790,7 @@
 
   (footprint "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm" (layer "F.Cu")
     (tedit 5D9F72B1) (tstamp a43f2e19-4e11-4e86-a12a-58a691d6df28)
-    (at 98 90.5)
+    (at 97.28 90.855)
     (descr "SOIC, 14 Pin (JEDEC MS-012AB, https://www.analog.com/media/en/package-pcb-resources/package/pkg_pdf/soic_narrow-r/r_14.pdf), generated with kicad-footprint-generator ipc_gullwing_generator.py")
     (tags "SOIC SO")
     (property "Sheetfile" "well-depth-battery.kicad_sch")
@@ -1859,7 +1859,7 @@
 
   (footprint "Resistor_SMD:R_0402_1005Metric" (layer "F.Cu")
     (tedit 5F68FEEE) (tstamp a85ba885-21f0-4ec6-a484-69d88e0e6f44)
-    (at 96.125 98.75 180)
+    (at 95.405 99.105 180)
     (descr "Resistor SMD 0402 (1005 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: IPC-SM-782 page 72, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf), generated with kicad-footprint-generator")
     (tags "resistor")
     (property "Sheetfile" "well-depth-battery.kicad_sch")
@@ -1901,7 +1901,7 @@
 
   (footprint "Resistor_SMD:R_0402_1005Metric" (layer "F.Cu")
     (tedit 5F68FEEE) (tstamp b83b087e-7ec9-44e7-a1c9-81d5d26bbf79)
-    (at 94 101 -90)
+    (at 93.28 101.355 -90)
     (descr "Resistor SMD 0402 (1005 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: IPC-SM-782 page 72, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf), generated with kicad-footprint-generator")
     (tags "resistor")
     (property "Sheetfile" "well-depth-battery.kicad_sch")
@@ -1943,7 +1943,7 @@
 
   (footprint "Resistor_SMD:R_0402_1005Metric" (layer "F.Cu")
     (tedit 5F68FEEE) (tstamp baac58cf-ba1a-4451-8078-47a320ad2217)
-    (at 96.25 107.47 -90)
+    (at 95.53 107.825 -90)
     (descr "Resistor SMD 0402 (1005 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: IPC-SM-782 page 72, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf), generated with kicad-footprint-generator")
     (tags "resistor")
     (property "Sheetfile" "well-depth-battery.kicad_sch")
@@ -1985,7 +1985,7 @@
 
   (footprint "Resistor_SMD:R_0402_1005Metric" (layer "F.Cu")
     (tedit 5F68FEEE) (tstamp bc01f3e7-a131-4f66-8abc-cc13e855d5e5)
-    (at 93.5 92.5 -90)
+    (at 92.78 92.855 -90)
     (descr "Resistor SMD 0402 (1005 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: IPC-SM-782 page 72, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf), generated with kicad-footprint-generator")
     (tags "resistor")
     (property "Sheetfile" "well-depth-battery.kicad_sch")
@@ -2027,7 +2027,7 @@
 
   (footprint "Diode_SMD:D_SOD-323" (layer "F.Cu")
     (tedit 58641739) (tstamp c5565d96-c729-4597-a74f-7f75befcc39d)
-    (at 88.57 86.73)
+    (at 88.102 86.73)
     (descr "SOD-323")
     (tags "SOD-323")
     (property "Sheetfile" "well-depth-battery.kicad_sch")
@@ -2038,7 +2038,7 @@
       (effects (font (size 1 1) (thickness 0.15)))
       (tstamp 2e36ce87-4661-4b8f-956a-16dc559e1b50)
     )
-    (fp_text value "D_Schottky_Small" (at 9.9 5.1) (layer "F.Fab")
+    (fp_text value "D_Schottky_Small" (at 9.648 5.455) (layer "F.Fab")
       (effects (font (size 1 1) (thickness 0.15)))
       (tstamp 2d617fad-47fe-4db9-836a-4bceb9c31c3b)
     )
@@ -2076,7 +2076,7 @@
 
   (footprint "Capacitor_SMD:C_0402_1005Metric" (layer "F.Cu")
     (tedit 5F68FEEE) (tstamp c665bf8f-ade8-4a9d-95ae-f4e3ccaa66bf)
-    (at 106 105.79 90)
+    (at 105.28 106.145 90)
     (descr "Capacitor SMD 0402 (1005 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: IPC-SM-782 page 76, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf), generated with kicad-footprint-generator")
     (tags "capacitor")
     (property "Sheetfile" "well-depth-battery.kicad_sch")
@@ -2118,7 +2118,7 @@
 
   (footprint "Resistor_SMD:R_0402_1005Metric" (layer "F.Cu")
     (tedit 5F68FEEE) (tstamp c7f74e02-22a2-44c3-ba93-2cb4738b7c33)
-    (at 95.875 100.5 90)
+    (at 95.155 100.855 90)
     (descr "Resistor SMD 0402 (1005 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: IPC-SM-782 page 72, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf), generated with kicad-footprint-generator")
     (tags "resistor")
     (property "Sheetfile" "well-depth-battery.kicad_sch")
@@ -2160,7 +2160,7 @@
 
   (footprint "Resistor_SMD:R_0402_1005Metric" (layer "F.Cu")
     (tedit 5F68FEEE) (tstamp cef3c07b-49ed-4b95-b754-4daff9ad0cb2)
-    (at 96.625 97.25 90)
+    (at 95.905 97.605 90)
     (descr "Resistor SMD 0402 (1005 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: IPC-SM-782 page 72, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf), generated with kicad-footprint-generator")
     (tags "resistor")
     (property "Sheetfile" "well-depth-battery.kicad_sch")
@@ -2202,7 +2202,7 @@
 
   (footprint "Resistor_SMD:R_0402_1005Metric" (layer "F.Cu")
     (tedit 5F68FEEE) (tstamp d7df1f01-3f56-437b-a452-e88ad90a9805)
-    (at 89.57 82.73)
+    (at 89.102 82.73)
     (descr "Resistor SMD 0402 (1005 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: IPC-SM-782 page 72, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf), generated with kicad-footprint-generator")
     (tags "resistor")
     (property "Sheetfile" "well-depth-battery.kicad_sch")
@@ -2244,7 +2244,7 @@
 
   (footprint "Capacitor_SMD:C_0402_1005Metric" (layer "F.Cu")
     (tedit 5F68FEEE) (tstamp d9b138bc-0203-4547-9bd8-5f8e532ba1ac)
-    (at 95.625 97.25 90)
+    (at 94.905 97.605 90)
     (descr "Capacitor SMD 0402 (1005 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: IPC-SM-782 page 76, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf), generated with kicad-footprint-generator")
     (tags "capacitor")
     (property "Sheetfile" "well-depth-battery.kicad_sch")
@@ -2286,7 +2286,7 @@
 
   (footprint "MountingHole:MountingHole_3.2mm_M3" (layer "F.Cu")
     (tedit 56D1B4CB) (tstamp dd1edec3-c7ba-4ffa-8ee5-8e55b6e96e86)
-    (at 99.25 115.25)
+    (at 98.5 115.5)
     (descr "Mounting Hole 3.2mm, no annular, M3")
     (tags "mounting hole 3.2mm no annular m3")
     (property "Sheetfile" "well-depth-battery.kicad_sch")
@@ -2312,7 +2312,7 @@
 
   (footprint "Resistor_SMD:R_0402_1005Metric" (layer "F.Cu")
     (tedit 5F68FEEE) (tstamp e7376da1-2f59-4570-81e8-46fca0289df0)
-    (at 105.4 103 90)
+    (at 104.68 103.355 90)
     (descr "Resistor SMD 0402 (1005 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: IPC-SM-782 page 72, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf), generated with kicad-footprint-generator")
     (tags "resistor")
     (property "Sheetfile" "well-depth-battery.kicad_sch")
@@ -2354,7 +2354,7 @@
 
   (footprint "Resistor_SMD:R_0402_1005Metric" (layer "F.Cu")
     (tedit 5F68FEEE) (tstamp e93a39c0-ae2f-4d69-82ed-37fb069ff7a5)
-    (at 101.5 105.27)
+    (at 100.78 105.625)
     (descr "Resistor SMD 0402 (1005 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: IPC-SM-782 page 72, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf), generated with kicad-footprint-generator")
     (tags "resistor")
     (property "Sheetfile" "well-depth-battery.kicad_sch")
@@ -2396,7 +2396,7 @@
 
   (footprint "Resistor_SMD:R_0402_1005Metric" (layer "F.Cu")
     (tedit 5F68FEEE) (tstamp eae6cb64-c798-40f3-b4c3-dcefb9e0714c)
-    (at 97 102.5 90)
+    (at 96.28 102.855 90)
     (descr "Resistor SMD 0402 (1005 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: IPC-SM-782 page 72, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf), generated with kicad-footprint-generator")
     (tags "resistor")
     (property "Sheetfile" "well-depth-battery.kicad_sch")
@@ -2438,7 +2438,7 @@
 
   (footprint "Resistor_SMD:R_0402_1005Metric" (layer "F.Cu")
     (tedit 5F68FEEE) (tstamp f184863f-807b-4eb3-ae9e-2a8857f5a82a)
-    (at 76.5 81.5 90)
+    (at 76.032 81.5 90)
     (descr "Resistor SMD 0402 (1005 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: IPC-SM-782 page 72, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf), generated with kicad-footprint-generator")
     (tags "resistor")
     (property "Sheetfile" "well-depth-battery.kicad_sch")
@@ -2480,7 +2480,7 @@
 
   (footprint "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" (layer "F.Cu")
     (tedit 5D9F72B1) (tstamp f7758f2a-e5c9-405c-960a-353b36eaf72d)
-    (at 90 92 90)
+    (at 89.28 92.355 90)
     (descr "SOIC, 8 Pin (JEDEC MS-012AA, https://www.analog.com/media/en/package-pcb-resources/package/pkg_pdf/soic_narrow-r/r_8.pdf), generated with kicad-footprint-generator ipc_gullwing_generator.py")
     (tags "SOIC SO")
     (property "Sheetfile" "well-depth-battery.kicad_sch")
@@ -2537,7 +2537,7 @@
 
   (footprint "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" (layer "F.Cu")
     (tedit 59FED5CC) (tstamp fac37166-6544-4a5a-8523-75c307b4539f)
-    (at 105.5 89.5)
+    (at 104.78 89.855)
     (descr "Through hole straight pin header, 1x02, 2.54mm pitch, single row")
     (tags "Through hole pin header THT 1x02 2.54mm single row")
     (property "Sheetfile" "well-depth-battery.kicad_sch")
@@ -2579,7 +2579,7 @@
 
   (footprint "Package_SO:SOP-8_3.9x4.9mm_P1.27mm" (layer "F.Cu")
     (tedit 5D9F72B1) (tstamp fba77be3-0033-48c6-9180-70b1821df298)
-    (at 100.75 108.77)
+    (at 100 109.25)
     (descr "SOP, 8 Pin (http://www.macronix.com/Lists/Datasheet/Attachments/7534/MX25R3235F,%20Wide%20Range,%2032Mb,%20v1.6.pdf#page=79), generated with kicad-footprint-generator ipc_gullwing_generator.py")
     (tags "SOP SO")
     (property "Sheetfile" "well-depth-battery.kicad_sch")
@@ -2590,7 +2590,7 @@
       (effects (font (size 1 1) (thickness 0.15)))
       (tstamp a0669899-5470-43ea-a529-f6722444bf9b)
     )
-    (fp_text value "LM358" (at -22.75 -27.59) (layer "F.Fab")
+    (fp_text value "LM358" (at -0.25 -1.5) (layer "F.Fab")
       (effects (font (size 1 1) (thickness 0.15)))
       (tstamp c2fd4927-8431-4c85-b75d-1336c8306cc2)
     )
@@ -2627,7 +2627,7 @@
       (net 7 "Net-(C4-Pad2)") (pintype "output") (tstamp a83a46a9-63ee-4d26-bfce-0ba963092218))
     (pad "8" smd roundrect locked (at 2.625 -1.905) (size 1.65 0.6) (layers "F.Cu" "F.Paste" "F.Mask") (roundrect_rratio 0.25)
       (net 9 "VDD") (pinfunction "V+") (pintype "power_in") (tstamp f19e33ae-597f-4b9a-8f2d-c4d9c6bead68))
-    (model "${KICAD6_3DMODEL_DIR}/Package_SO.3dshapes/SOP-8_3.9x4.9mm_P1.27mm.wrl"
+    (model "${KICAD6_3DMODEL_DIR}/Package_SO.3dshapes/SOIC-8_3.9x4.9mm_P1.27mm.step"
       (offset (xyz 0 0 0))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))
@@ -2636,7 +2636,7 @@
 
   (footprint "Package_TO_SOT_SMD:SOT-23" (layer "F.Cu")
     (tedit 5FA16958) (tstamp fe1bd8e9-7e87-4635-aee4-ff9ac1345deb)
-    (at 99.125 97 180)
+    (at 98.405 97.355 180)
     (descr "SOT, 3 Pin (https://www.jedec.org/system/files/docs/to-236h.pdf variant AB), generated with kicad-footprint-generator ipc_gullwing_generator.py")
     (tags "SOT TO_SOT_SMD")
     (property "Sheetfile" "well-depth-battery.kicad_sch")
@@ -2681,9 +2681,11 @@
     )
   )
 
-  (gr_arc (start 65.108835 87.63) (mid 110.529683 99.06) (end 65.108835 110.49) (layer "Edge.Cuts") (width 0.2) (tstamp 3b0eb3d0-4c1b-4d23-881b-acbb21fccdac))
-  (gr_line (start 84.328 87.63) (end 84.328 110.49) (layer "Edge.Cuts") (width 0.2) (tstamp f7d7b81c-2ec6-4de3-9046-99caefb0a3fe))
-  (gr_line (start 84.328 110.49) (end 65.108835 110.49) (layer "Edge.Cuts") (width 0.2) (tstamp fcc139da-dbba-455d-848b-3880779809de))
-  (gr_line (start 65.108835 87.63) (end 84.328 87.63) (layer "Edge.Cuts") (width 0.2) (tstamp fd4efd5f-cfec-44b2-af2d-0803b79fdf25))
+  (gr_arc (start 69.363001 81.522383) (mid 110.141336 99.000002) (end 69.363001 116.477617) (layer "Edge.Cuts") (width 0.2) (tstamp 2ee8f6fb-ba95-46e7-aac0-264017c7b564))
+  (gr_line (start 69.363 87.57) (end 83.968 87.57) (layer "Edge.Cuts") (width 0.2) (tstamp 2f988663-1a29-4f09-b2d7-92ad5d94794b))
+  (gr_line (start 69.363 110.43) (end 69.363 116.477618) (layer "Edge.Cuts") (width 0.2) (tstamp 7e4ade4d-f930-4ad3-894b-4ea6a9806a26))
+  (gr_line (start 83.968 110.43) (end 69.363 110.43) (layer "Edge.Cuts") (width 0.2) (tstamp a42ea6ad-a447-49fc-9906-7fcad9b38814))
+  (gr_line (start 69.363 87.57) (end 69.363 81.522382) (layer "Edge.Cuts") (width 0.2) (tstamp b45e6c1a-b0eb-4b35-a6a8-4ad1e09e2922))
+  (gr_line (start 83.968 87.57) (end 83.968 110.43) (layer "Edge.Cuts") (width 0.2) (tstamp d792aec0-aee7-4228-a679-0b33947e4320))
 
 )
