@@ -3,6 +3,20 @@ Well monitoring equipment for Engineers Without Borders
 
 This hardware is for projects that require more monitoring than is possible with manual measurements taken by community members. The well monitor is easily programmed to automatically log sensor values, and can be deployed into remote locations that are inconvenient to access regularly. 
 
+## Well Depth with Battery \[WIP\]
+This device is intended for locations where mains power is not available. It uses a single 9V battery which will last for 10 years. It uses the same strain-guage based sensing technique and is the lowest cost solution available. 
+
+Data is saved once every three hours to a USB flash drive, which is removed and replaced whenever a user wants to view the data. 
+
+The device seals inside a standard 2" PVC pipe. The center photo shows the inner assembly, with the PCB on the right.
+<p float="left">
+  <img src="https://github.com/hansgaensbauer/Well-Monitor/blob/main/Pictures/Outside.png?raw=true" height="400">
+
+  <img src="https://github.com/hansgaensbauer/Well-Monitor/blob/main/Pictures/Assembly.png?raw=true" height="400">
+  
+  <img src="https://github.com/hansgaensbauer/Well-Monitor/blob/main/Pictures/wdb-pcb.png?raw=true" height="400">
+ </p>
+
 ## Water Level Sensor
 Because COTS pressure transducers are very expensive, we needed an alternative sensing technique for depth measurement. With this device, we measure well depth by weighing a length of HDPE pipe that is suspended in the well - as the water level rises, more of the pipe is submerged, and the apparent weight decreases. The typical configuration of the sensor looks like the following:
 
@@ -14,11 +28,6 @@ The Depth Sensor is compatible with a wide variety of cheap strain gauges, and i
 
   <img src="https://github.com/hansgaensbauer/Well-Monitor/blob/main/Pictures/depth-sensor-bottom.jpg?raw=true" height="300">
  </p>
-
-## Well Depth with Battery \[WIP\]
-This device is intended for locations where mains power is not available. It uses a single 9V battery which will last for 10 years. It uses the same strain-guage based sensing technique and is the lowest cost solution available. 
-
-Data is saved once every three hours to a USB flash drive, which is removed and replaced whenever a user wants to view the data. 
 
 ## Well Depth with Mains Power
 This device is intended for installations that have access to 120-220V 50-60Hz power from a grid or solar installation. Well depth measurements are saved to an SD card, and the device is compatible with standard 4-20mA output water pressure transducers. 
