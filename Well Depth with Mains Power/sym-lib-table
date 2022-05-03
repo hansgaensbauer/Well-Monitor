@@ -1,3 +1,4 @@
 (sym_lib_table
   (lib (name "well-monitor")(type "KiCad")(uri "${EWB}/well-monitor.kicad_sym")(options "")(descr ""))
+  (lib (name "micro_sd_card")(type "KiCad")(uri "C:/Users/hansg/Desktop/micro_sd_card.kicad_sym")(options "")(descr ""))
 )
