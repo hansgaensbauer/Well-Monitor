@@ -1818,14 +1818,14 @@
         )
       )
     )
-    (symbol "well-monitor:MCP1793T-3302H{slash}DC" (in_bom yes) (on_board yes)
-      (property "Reference" "U" (id 0) (at 6.35 3.81 0)
+    (symbol "well-monitor:MCP1793T-3302H-DC" (in_bom yes) (on_board yes)
+      (property "Reference" "U6" (id 0) (at 0 6.189 0)
         (effects (font (size 1.27 1.27)))
       )
-      (property "Value" "MCP1793T-3302H{slash}DC" (id 1) (at -7.62 3.81 0)
+      (property "Value" "MCP1793T-3302H-DC" (id 1) (at 0 3.6521 0)
         (effects (font (size 1.27 1.27)))
       )
-      (property "Footprint" "" (id 2) (at -7.62 1.27 0)
+      (property "Footprint" "Package_TO_SOT_SMD:SOT-223-6" (id 2) (at -7.62 1.27 0)
         (effects (font (size 1.27 1.27)) hide)
       )
       (property "Datasheet" "http://ww1.microchip.com/downloads/en/DeviceDoc/MCP1792-Family-Data-Sheet-DS20006229C.pdf" (id 3) (at -7.62 1.27 0)
@@ -1837,13 +1837,13 @@
       (property "ki_description" "100 mA High-Voltage Automotive LDO" (id 5) (at 0 0 0)
         (effects (font (size 1.27 1.27)) hide)
       )
-      (symbol "MCP1793T-3302H{slash}DC_0_1"
+      (symbol "MCP1793T-3302H-DC_0_1"
         (rectangle (start -7.62 2.54) (end 7.62 -3.81)
           (stroke (width 0.1524) (type default) (color 0 0 0 0))
           (fill (type background))
         )
       )
-      (symbol "MCP1793T-3302H{slash}DC_1_1"
+      (symbol "MCP1793T-3302H-DC_1_1"
         (pin input line (at -10.16 -1.27 0) (length 2.54)
           (name "~{SHDN}" (effects (font (size 1.27 1.27))))
           (number "1" (effects (font (size 1.27 1.27))))
@@ -4397,7 +4397,7 @@
     (pin "1" (uuid 1160936b-3360-493d-86b9-fe03b82e5e8e))
   )
 
-  (symbol (lib_id "well-monitor:MCP1793T-3302H{slash}DC") (at 196.85 31.75 0) (unit 1)
+  (symbol (lib_id "well-monitor:MCP1793T-3302H-DC") (at 196.85 31.75 0) (unit 1)
     (in_bom yes) (on_board yes) (fields_autoplaced)
     (uuid b0768836-0fda-463a-a7aa-3ec5d6ee85da)
     (property "Reference" "U6" (id 0) (at 196.85 25.561 0))
