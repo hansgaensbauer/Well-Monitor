@@ -37,7 +37,7 @@ int main (void)
 	REG_PORT_DIRSET0 = (1 << 15);
 	
 	while(true){
-		delay_ms(100);
+		delay_ms(1000);
 		REG_PORT_OUTTGL0 = (1 << 15);
 	}
 
