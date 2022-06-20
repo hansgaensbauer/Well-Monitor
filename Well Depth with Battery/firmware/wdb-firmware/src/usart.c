@@ -4,19 +4,33 @@
  * Created: 6/20/2022 10:28:09 AM
  *  Author: hansg
  */ 
+#include "samd21.h"
+#include <stdio.h>
+#include <stdarg.h>
 
 #include "usart.h"
-#include "samd21.h"
+#include "main.h"
 
 void usart_init(){
+	//Enable Advanced Peripheral Bus Clock
+	REG_PM_APBCMASK |= PM_APBCMASK_SERCOM0;
+	
+	GCLK->CLKCTRL.reg = (
+		GCLK_CLKCTRL_ID(SERCOM0_GCLK_ID_CORE) | 
+		GCLK_CLKCTRL_CLKEN | 
+		GCLK_CLKCTRL_GEN(0)
+	);
+	
 	SERCOM0->USART.CTRLA.reg = ~SERCOM_USART_CTRLA_ENABLE; //disable the USART
 	
 	//Set up IO pins
-	REG_PORT_DIRSET0 |= TX_PIN;
+	REG_PORT_DIRSET0 |= (1 << 10);
+	REG_PORT_DIRCLR0 |= (1 << 11);
+	PORT->Group[0].PINCFG[11].reg &= ~PORT_PINCFG_PULLEN; //enable pulldown4
 	PORT->Group[0].PINCFG[10].reg |= PORT_PINCFG_PMUXEN; //Enable PMUX
 	PORT->Group[0].PINCFG[11].reg |= PORT_PINCFG_PMUXEN; //Enable PMUX
-	PORT->Group[0].PMUX[10/2].bit.PMUXE = PORT_PMUX_PMUXE_C_Val; //Peripheral function C
-	PORT->Group[0].PMUX[11/2].bit.PMUXO = PORT_PMUX_PMUXO_C_Val; //Peripheral function C
+	PORT->Group[0].PMUX[10>>1].bit.PMUXE = PORT_PMUX_PMUXE_C_Val; //Peripheral function C
+	PORT->Group[0].PMUX[11>>1].bit.PMUXO = PORT_PMUX_PMUXO_C_Val; //Peripheral function C
 	
 	//Set operating mode 	
 	//Set asynchronous communication mode
@@ -24,6 +38,7 @@ void usart_init(){
 	//Set data order
 	SERCOM0->USART.CTRLA.reg = (
 		SERCOM_USART_CTRLA_MODE_USART_INT_CLK | 
+		SERCOM_USART_CTRLA_DORD | 
 		SERCOM_USART_CTRLA_RXPO(0x3) | 
 		SERCOM_USART_CTRLA_TXPO(0x1)
 		);
@@ -43,9 +58,22 @@ void usart_init(){
 }
 
 void write_char(char c){
-	/*
-	while(!(SERCOM0->USART.INTFLAG.bit.TXC)){
+	while(!(REG_SERCOM0_USART_INTFLAG & 1));
+	REG_SERCOM0_USART_DATA = c;
+}
+
+void write_str(const char * str){
+	for(int i = 0; str[i]!='\0'; i++){
+		write_char(str[i]);
 	}
-	SERCOM0->USART.DATA.reg = c;
-	*/
+}
+
+void debug_print(const char *fmt, ...){
+		va_list argptr;
+		char buff[MAX_PRINT_LEN];
+		va_start(argptr, fmt);
+		vsprintf(buff, fmt, argptr);
+		va_end(argptr);
+		
+		write_str(buff);
 }

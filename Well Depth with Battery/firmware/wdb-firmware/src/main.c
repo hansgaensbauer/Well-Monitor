@@ -28,7 +28,9 @@
  * Support and FAQ: visit <a href="https://www.microchip.com/support/">Microchip Support</a>
  */
 #include <asf.h>
+#include <string.h>
 #include "usart.h"
+#include "main.h"
 
 int main (void)
 {
@@ -36,11 +38,12 @@ int main (void)
 	delay_init();
 	usart_init();
 	
-	REG_PORT_DIRSET0 = (1 << 15);
+	uint8_t i = 0;
 	
 	while(true){
 		delay_ms(1000);
-		write_char('h');
+		i = i+1;
+		debug_print("We've done %d cycles\n\r", i);
 	}
 
 	/* Insert application code here, after the board has been initialized. */
