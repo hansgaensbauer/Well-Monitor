@@ -577,6 +577,12 @@
     <Folder Include="src\config\" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="src\usart.c">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="src\usart.h">
+      <SubType>compile</SubType>
+    </Compile>
     <None Include="src\ASF\common2\services\delay\sam0\systick_counter.h">
       <SubType>compile</SubType>
     </None>

@@ -5,10 +5,11 @@
  *  Author: hansg
  */ 
 
-//#include "usart.h"
+#include "usart.h"
+#include "samd21.h"
 
-void init_usart(){
-	SERCOM0->USART.CTRLA.reg &= ~SERCOM_USART_CTRLA_ENABLE //disable the USART
+void usart_init(){
+	SERCOM0->USART.CTRLA.reg = ~SERCOM_USART_CTRLA_ENABLE; //disable the USART
 	
 	//Set up IO pins
 	REG_PORT_DIRSET0 |= TX_PIN;
@@ -31,12 +32,20 @@ void init_usart(){
 	SERCOM0->USART.CTRLB.reg = (
 		SERCOM_USART_CTRLB_RXEN | 
 		SERCOM_USART_CTRLB_TXEN | 
-		SERCOM_USART_CTRLB_CHSIZE(0); //8 data bits
+		SERCOM_USART_CTRLB_CHSIZE(0) //8 data bits
 		);
 	
-	uint64_t baudRate = (uint64_t)65536 * (F_CPU - 16 * baud) / F_CPU;
+	uint64_t baudRate = (uint64_t)65536 * (F_CPU - 16 * BAUDRATE) / F_CPU;
 	SERCOM0->USART.BAUD.reg = (uint32_t)baudRate; //write baud register
 	
 	//Enable the USART
 	SERCOM0->USART.CTRLA.reg |= SERCOM_USART_CTRLA_ENABLE;
+}
+
+void write_char(char c){
+	/*
+	while(!(SERCOM0->USART.INTFLAG.bit.TXC)){
+	}
+	SERCOM0->USART.DATA.reg = c;
+	*/
 }
