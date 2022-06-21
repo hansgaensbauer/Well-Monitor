@@ -41,9 +41,13 @@ int main (void)
 	usart_init();
 	adc_init();
 	
+	//Turn on the analog subsystem
+	PORT->Group[0].DIRSET.reg = PORT_PA09;
+	PORT->Group[0].OUTSET.reg = PORT_PA09;
+	
 	while(true){
 		delay_ms(1000);
-		debug_print("Done\n\r");
+		debug_print("ADC_Value: %d\n\r", adc_read());
 	}
 
 	/* Insert application code here, after the board has been initialized. */
