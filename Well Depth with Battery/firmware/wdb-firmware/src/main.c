@@ -29,21 +29,21 @@
  */
 #include <asf.h>
 #include <string.h>
-#include "usart.h"
+
 #include "main.h"
+#include "usart.h"
+#include "adc.h"
 
 int main (void)
 {
 	system_init();
 	delay_init();
 	usart_init();
-	
-	uint8_t i = 0;
+	adc_init();
 	
 	while(true){
 		delay_ms(1000);
-		i = i+1;
-		debug_print("We've done %d cycles\n\r", i);
+		debug_print("Done\n\r");
 	}
 
 	/* Insert application code here, after the board has been initialized. */

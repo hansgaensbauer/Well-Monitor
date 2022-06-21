@@ -12,7 +12,7 @@
 #include "main.h"
 
 void usart_init(){
-	//Enable Advanced Peripheral Bus Clock
+	//Enable Advanced Peripheral Bus Clock for SERCOM0
 	REG_PM_APBCMASK |= PM_APBCMASK_SERCOM0;
 	
 	GCLK->CLKCTRL.reg = (
@@ -24,8 +24,8 @@ void usart_init(){
 	SERCOM0->USART.CTRLA.reg = ~SERCOM_USART_CTRLA_ENABLE; //disable the USART
 	
 	//Set up IO pins
-	REG_PORT_DIRSET0 |= (1 << 10);
-	REG_PORT_DIRCLR0 |= (1 << 11);
+	PORT->Group[0].DIRSET.reg = PORT_PA10;
+	PORT->Group[0].DIRCLR.reg = PORT_PA11;
 	PORT->Group[0].PINCFG[11].reg &= ~PORT_PINCFG_PULLEN; //enable pulldown4
 	PORT->Group[0].PINCFG[10].reg |= PORT_PINCFG_PMUXEN; //Enable PMUX
 	PORT->Group[0].PINCFG[11].reg |= PORT_PINCFG_PMUXEN; //Enable PMUX
@@ -58,8 +58,8 @@ void usart_init(){
 }
 
 void write_char(char c){
-	while(!(REG_SERCOM0_USART_INTFLAG & 1));
-	REG_SERCOM0_USART_DATA = c;
+	while(!SERCOM0->USART.INTFLAG.bit.DRE);
+	SERCOM0->USART.DATA.reg = c;
 }
 
 void write_str(const char * str){
@@ -69,6 +69,7 @@ void write_str(const char * str){
 }
 
 void debug_print(const char *fmt, ...){
+	#ifdef DEBUG_PRINT
 		va_list argptr;
 		char buff[MAX_PRINT_LEN];
 		va_start(argptr, fmt);
@@ -76,4 +77,5 @@ void debug_print(const char *fmt, ...){
 		va_end(argptr);
 		
 		write_str(buff);
+	#endif //DEBUG PRING
 }
