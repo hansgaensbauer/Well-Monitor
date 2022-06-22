@@ -39,6 +39,9 @@
 
 #include "compiler.h"
 
+//SOF Event Callback Prototype. I added this.
+void main_usb_sof_event(void);
+
 /**
  * USB Host Configuration
  * @{
@@ -49,6 +52,9 @@
 
 //! Maximum current allowed on Vbus (mA)
 #define USB_HOST_POWER_MAX  500
+
+//SOF Callback Function. I added this.
+#define UHC_SOF_EVENT()  main_usb_sof_event()
 
 //! Authorize the USB HUB support
 // #define USB_HOST_HUB_SUPPORT

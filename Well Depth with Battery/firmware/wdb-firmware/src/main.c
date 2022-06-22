@@ -34,6 +34,9 @@
 #include "usart.h"
 #include "adc.h"
 
+//USB MSC SOF Counter. I added this
+volatile static uint16_t main_usb_sof_counter = 0;
+
 int main (void)
 {
 	system_init();
@@ -51,4 +54,10 @@ int main (void)
 	}
 
 	/* Insert application code here, after the board has been initialized. */
+}
+
+//SOF Callback Function. I added this.
+void main_usb_sof_event(void)
+{
+	main_usb_sof_counter++;
 }
