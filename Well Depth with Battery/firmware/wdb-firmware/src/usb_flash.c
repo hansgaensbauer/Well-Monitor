@@ -40,6 +40,7 @@ void usb_readchars(void){
 	debug_print(char_buffer);
 	debug_print("\n\r");
 	f_close(&file_object);
+	f_mount(lun, NULL); //unmount the device
 }
 
 /*
@@ -54,7 +55,8 @@ void usb_writedata(uint16_t data){
 		debug_print("Mount Failed!\n\r");
 		return;
 	}
-	res = f_open(&file_object,firmware_filename, FA_READ);
+	res = f_open(&file_object,firmware_filename, FA_WRITE);
+	f_lseek(&file_object, file_object.fsize);  //Move to the end of the file
 	if (res == FR_NOT_READY) { // LUN not ready
 		debug_print("File open failed!\n\r");
 		f_close(&file_object);
@@ -66,12 +68,13 @@ void usb_writedata(uint16_t data){
 		return;
 	}
 	
-	char char_buffer[16];
-	
-	/* Read the first 16 bytes from USB stick into char_buffer*/
-	f_read(&file_object, char_buffer, 16, NULL );
+	// Print the data to the file
+	char databuf[24];
+	uint numchars = sprintf(databuf, "\n\rADC Value: %d", data);
+	debug_print("saving data to the file: ");
+	debug_print(databuf);
 	debug_print("\n\r");
-	debug_print(char_buffer);
-	debug_print("\n\r");
+	f_write(&file_object, databuf, numchars, NULL);
 	f_close(&file_object);
+	f_mount(lun, NULL); //unmount the device
 }

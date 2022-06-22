@@ -57,7 +57,6 @@ int main (void)
 	while(true){
 		delay_ms(1000);
 		debug_print("ADC_Value: %d\n\r", adc_read());
+		usb_writedata(adc_read());
 	}
-
-	/* Insert application code here, after the board has been initialized. */
 }
