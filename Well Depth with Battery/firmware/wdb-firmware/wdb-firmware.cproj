@@ -834,6 +834,12 @@
     <Compile Include="src\ASF\common\services\sleepmgr\samd\sleepmgr.c">
       <SubType>compile</SubType>
     </Compile>
+    <Compile Include="src\usb_flash.c">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="src\usb_flash.h">
+      <SubType>compile</SubType>
+    </Compile>
     <None Include="src\ASF\common\services\sleepmgr\sleepmgr.h">
       <SubType>compile</SubType>
     </None>
