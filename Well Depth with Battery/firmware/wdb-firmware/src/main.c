@@ -61,9 +61,3 @@ int main (void)
 
 	/* Insert application code here, after the board has been initialized. */
 }
-
-//SOF Callback Function. I added this.
-void main_usb_sof_event(void)
-{
-	main_usb_sof_counter++;
-}
