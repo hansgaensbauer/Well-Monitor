@@ -19,7 +19,7 @@ void adc_init(){
 	GCLK->CLKCTRL.reg = (
 		GCLK_CLKCTRL_ID(ADC_GCLK_ID) |
 		GCLK_CLKCTRL_CLKEN |
-		GCLK_CLKCTRL_GEN(0)
+		GCLK_CLKCTRL_GEN(1)
 	);
 	
 	while(GCLK->STATUS.bit.SYNCBUSY); //wait for bus sync

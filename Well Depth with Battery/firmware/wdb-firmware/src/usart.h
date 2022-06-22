@@ -1,7 +1,7 @@
 #ifndef USART_H_
 #define USART_H_
 	
-	#define F_CPU 8000000UL
+	#define F_CPU 48000000UL
 	#define BAUDRATE 9600
 	#define TX_PIN (1 << 10) //PA10
 	#define MAX_PRINT_LEN 120
