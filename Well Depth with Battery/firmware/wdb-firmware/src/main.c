@@ -37,7 +37,7 @@
 //Variables for MSC 
 #include "string.h"
 #define MAX_DRIVE _VOLUMES
-#define FIRMWARE_FILE "firmware.txt"
+#define FIRMWARE_FILE "welldata.txt"
 const char firmware_filename[] = {FIRMWARE_FILE};
 /* FATFS variables */
 static FATFS fs;
@@ -68,30 +68,31 @@ int main (void)
 	FRESULT res = f_mount(lun, &fs);
 	if (FR_INVALID_DRIVE == res) {
 		debug_print("Mount Failed!\n\r");
-		continue;
+	} else {
+		res = f_open(&file_object,firmware_filename, FA_READ);
+		if (res == FR_NOT_READY) {
+			/* LUN not ready */
+			debug_print("File open failed!\n\r");
+			f_close(&file_object);
+		} else {
+			if (res != FR_OK) {
+				/* LUN test error */
+				f_close(&file_object);
+				debug_print("File open failed!\n\r");
+			} else {
+				/* Get size of file */
+				uint32_t fw_size = f_size(&file_object);
+				uint8_t char_buffer[16];
+				/* Read the first 16 bytes from USB stick into char_buffer*/
+				f_read(&file_object, char_buffer, 16, NULL );
+				/* Clear display and print content of file */
+				debug_print("\n\r");
+				debug_print(char_buffer);
+				f_close(&file_object);
+			}
+		}
 	}
-	res = f_open(&file_object,firmware_filename, FA_READ);
-	if (res == FR_NOT_READY) {
-		/* LUN not ready */
-		debug_print("File open failed!\n\r");
-		f_close(&file_object);
-		continue;
-	}
-	if (res != FR_OK) {
-		/* LUN test error */
-		f_close(&file_object);
-		debug_print("File open failed!\n\r");
-		continue;
-	}
-	/* Get size of file */
-	uint32_t fw_size = f_size(&file_object);
-	uint8_t char_buffer[16];
-	/* Read the first 16 bytes from USB stick into char_buffer*/
-	f_read(&file_object, char_buffer, 16, NULL );
-	/* Clear display and print content of file */
-	debug_print("\n\r");
-	debug_print(char_buffer);
-	f_close(&file_object);
+	
 	/////////////////////////////////
 	
 	while(true){
