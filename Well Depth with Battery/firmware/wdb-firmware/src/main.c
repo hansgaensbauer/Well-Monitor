@@ -44,7 +44,7 @@ int main (void)
 	system_init();
 	delay_init();
 	usart_init();
-	adc_init();
+	//adc_init();
 	rtc_init();
 	
 	//Turn on the analog subsystem

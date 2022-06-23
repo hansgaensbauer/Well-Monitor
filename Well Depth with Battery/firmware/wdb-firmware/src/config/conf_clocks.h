@@ -136,11 +136,11 @@
 #  define CONF_CLOCK_GCLK_1_OUTPUT_ENABLE         false
 
 /* Configure GCLK generator 2 (RTC) */
-#  define CONF_CLOCK_GCLK_2_ENABLE                false
-#  define CONF_CLOCK_GCLK_2_RUN_IN_STANDBY        false
-#  define CONF_CLOCK_GCLK_2_CLOCK_SOURCE          SYSTEM_CLOCK_SOURCE_OSC32K
-#  define CONF_CLOCK_GCLK_2_PRESCALER             32
-#  define CONF_CLOCK_GCLK_2_OUTPUT_ENABLE         false
+#  define CONF_CLOCK_GCLK_2_ENABLE                true
+#  define CONF_CLOCK_GCLK_2_RUN_IN_STANDBY        true
+#  define CONF_CLOCK_GCLK_2_CLOCK_SOURCE          SYSTEM_CLOCK_SOURCE_XOSC32K
+#  define CONF_CLOCK_GCLK_2_PRESCALER             1
+#  define CONF_CLOCK_GCLK_2_OUTPUT_ENABLE         true
 
 /* Configure GCLK generator 3 */
 #  define CONF_CLOCK_GCLK_3_ENABLE                false
