@@ -34,6 +34,7 @@
 #include "usart.h"
 #include "adc.h"
 #include "usb_flash.h"
+#include "rtc_sleep.h"
 
 //USB MSC SOF Counter. I added this
 volatile static uint16_t main_usb_sof_counter = 0;
@@ -44,19 +45,20 @@ int main (void)
 	delay_init();
 	usart_init();
 	adc_init();
+	rtc_init();
 	
 	//Turn on the analog subsystem
-	PORT->Group[0].DIRSET.reg = PORT_PA09;
+	PORT->Group[0].DIRSET.reg = PORT_PA09 | PORT_PA15;
 	PORT->Group[0].OUTSET.reg = PORT_PA09;
 	
-	uhc_start();
+	//uhc_start();
 	delay_s(2); //wait 2 seconds
 	
-	usb_readchars();
+	//usb_readchars();
 	
 	while(true){
 		delay_ms(1000);
-		debug_print("ADC_Value: %d\n\r", adc_read());
-		usb_writedata(adc_read());
+		//debug_print("ADC_Value: %d\n\r", adc_read());
+		//usb_writedata(adc_read());
 	}
 }

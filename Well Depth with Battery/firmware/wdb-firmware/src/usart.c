@@ -15,6 +15,7 @@ void usart_init(){
 	//Enable Advanced Peripheral Bus Clock for SERCOM0
 	REG_PM_APBCMASK |= PM_APBCMASK_SERCOM0;
 	
+	//Set up Generic Clock Generator 0 for USART
 	GCLK->CLKCTRL.reg = (
 		GCLK_CLKCTRL_ID(SERCOM0_GCLK_ID_CORE) | 
 		GCLK_CLKCTRL_CLKEN | 

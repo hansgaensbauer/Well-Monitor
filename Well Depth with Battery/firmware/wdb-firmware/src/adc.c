@@ -16,6 +16,7 @@ void adc_init(){
 	//Enable Advanced Peripheral Bus Clock for ADC
 	PM->APBCMASK.reg |= PM_APBCMASK_ADC;
 	
+	//Set up Generic Clock Generator 1 for ADC
 	GCLK->CLKCTRL.reg = (
 		GCLK_CLKCTRL_ID(ADC_GCLK_ID) |
 		GCLK_CLKCTRL_CLKEN |
