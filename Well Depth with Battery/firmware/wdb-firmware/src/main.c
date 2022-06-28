@@ -42,23 +42,44 @@ volatile static uint16_t main_usb_sof_counter = 0;
 int main (void)
 {
 	system_init();
+	rtc_init();
 	delay_init();
 	usart_init();
-	//adc_init();
-	rtc_init();
+	adc_init();
 	
-	//Turn on the analog subsystem
+	//Configure PA9 and PA15 as outputs
 	PORT->Group[0].DIRSET.reg = PORT_PA09 | PORT_PA15;
-	PORT->Group[0].OUTSET.reg = PORT_PA09;
-	
-	//uhc_start();
-	delay_s(2); //wait 2 seconds
-	
-	//usb_readchars();
 	
 	while(true){
-		delay_ms(1000);
-		//debug_print("ADC_Value: %d\n\r", adc_read());
-		//usb_writedata(adc_read());
+		debug_print("waking up\n\r");
+		analog_on();
+		led_on();
+		
+		
+		//uhc_start();
+		delay_s(2);
+		
+		int acc = 0;
+		//Read the strain gauge ADC value and average
+		for(int i = 0; i < NUMSAMPLES; i++){
+			acc += adc_read();
+		}
+		//usb_writedata(acc);
+		debug_print("Wrote Data!\n\r");
+		
+		analog_off();
+		standby();
 	}
+}
+
+void analog_on(){
+	PORT->Group[0].OUTSET.reg = PORT_PA09;
+}
+
+void analog_off(){
+	PORT->Group[0].OUTCLR.reg = PORT_PA15 | PORT_PA09;
+}
+
+void led_on(){
+	PORT->Group[0].OUTSET.reg = PORT_PA15;
 }

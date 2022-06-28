@@ -28,7 +28,7 @@ void usb_readchars(void){
 	}
 	if (res != FR_OK) { // LUN test error
 		f_close(&file_object);
-		debug_print("File open failed!\n\r");
+		debug_print("LUN Test Error!\n\r");
 		return;
 	}
 	
@@ -64,7 +64,7 @@ void usb_writedata(uint16_t data){
 	}
 	if (res != FR_OK) { // LUN test error
 		f_close(&file_object);
-		debug_print("File open failed!\n\r");
+		debug_print("LUN Test Error!\n\r");
 		return;
 	}
 	

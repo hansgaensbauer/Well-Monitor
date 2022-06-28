@@ -12,7 +12,7 @@
 
 
 void adc_init(){
-	debug_print("Configuring ADC\n\r");
+	debug_print("interrupt\n\r");
 	//Enable Advanced Peripheral Bus Clock for ADC
 	PM->APBCMASK.reg |= PM_APBCMASK_ADC;
 	
@@ -50,14 +50,13 @@ void adc_init(){
 	PORT->Group[0].PMUX[2>>1].bit.PMUXE = PORT_PMUX_PMUXE_B_Val;
 	while (ADC->STATUS.bit.SYNCBUSY);  // Wait for bus synchronization.
 	
-	ADC->CTRLA.reg |= ADC_CTRLA_ENABLE; //Enable ADC
-	
-	
+	ADC->CTRLA.reg |= ADC_CTRLA_ENABLE; //Enable ADCs
 }
 
 uint16_t adc_read(){
+	debug_print("\tReading ADC\n\r");
 	while (ADC->STATUS.bit.SYNCBUSY); // Wait for bus synchronization.
-
+	
 	ADC->SWTRIG.reg |= ADC_SWTRIG_START; // Start the ADC using a software trigger.
 	while(!ADC->INTFLAG.bit.RESRDY); // Wait for the result ready flag to be set.
 	ADC->INTFLAG.reg = ADC_INTFLAG_RESRDY; //clear the flag

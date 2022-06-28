@@ -7,6 +7,7 @@
 #include "samd21.h"
 #include <stdio.h>
 #include <stdarg.h>
+#include <asf.h>
 
 #include "usart.h"
 #include "main.h"
@@ -71,6 +72,7 @@ void write_str(const char * str){
 
 void debug_print(const char *fmt, ...){
 	#ifdef DEBUG_PRINT
+		delay_ms(10);
 		va_list argptr;
 		char buff[MAX_PRINT_LEN];
 		va_start(argptr, fmt);
@@ -78,5 +80,6 @@ void debug_print(const char *fmt, ...){
 		va_end(argptr);
 		
 		write_str(buff);
+		delay_ms(10); //Eventually we should just wait
 	#endif //DEBUG PRING
 }
