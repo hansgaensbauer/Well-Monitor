@@ -8,7 +8,7 @@
 	#define FIRMWARE_FILE "welldata.txt"
 	
 	void usb_readchars(void);
-	void usb_writedata(uint16_t);
+	void usb_writedata(uint16_t, int);
 
 
 #endif /* USB_FLASH_H_ */

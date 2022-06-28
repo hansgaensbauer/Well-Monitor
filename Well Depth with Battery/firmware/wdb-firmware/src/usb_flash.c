@@ -46,7 +46,7 @@ void usb_readchars(void){
 /*
 * Saves a datapoint to the file.
 */
-void usb_writedata(uint16_t data){
+void usb_writedata(uint16_t data, int idx){
 	volatile uint8_t lun = LUN_ID_USB;
 	memset(&fs, 0, sizeof(FATFS));
 	
@@ -70,10 +70,10 @@ void usb_writedata(uint16_t data){
 	
 	// Print the data to the file
 	char databuf[24];
-	uint numchars = sprintf(databuf, "\n\rADC Value: %d", data);
-	debug_print("saving data to the file: ");
+	uint numchars = sprintf(databuf, "%d, %d\n", idx, data);
+	debug_print("Saving data: \"");
 	debug_print(databuf);
-	debug_print("\n\r");
+	debug_print("\"\n\r");
 	f_write(&file_object, databuf, numchars, NULL);
 	f_close(&file_object);
 	f_mount(lun, NULL); //unmount the device

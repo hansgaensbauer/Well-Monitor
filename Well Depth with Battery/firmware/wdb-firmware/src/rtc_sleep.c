@@ -61,7 +61,7 @@ void rtc_init(){
 void RTC_Handler(void){
 
 	// Interrupt processing code
-	PORT->Group[0].OUTTGL.reg = PORT_PA15;
+	//PORT->Group[0].OUTTGL.reg = PORT_PA15;
 	
 	// Acknowledge the interrupt (clear MC0 interrupt flag to re-arm)
 	RTC->MODE1.INTFLAG.reg = RTC_MODE1_INTFLAG_OVF;

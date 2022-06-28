@@ -50,13 +50,14 @@ int main (void)
 	//Configure PA9 and PA15 as outputs
 	PORT->Group[0].DIRSET.reg = PORT_PA09 | PORT_PA15;
 	
+	int meas_idx = 0; //This will go back to zero on reset
+	
 	while(true){
-		debug_print("waking up\n\r");
+		debug_print("Waking Up\n\r");
 		analog_on();
-		led_on();
+		//led_on();
 		
-		
-		//uhc_start();
+		uhc_start();
 		delay_s(2);
 		
 		int acc = 0;
@@ -64,10 +65,11 @@ int main (void)
 		for(int i = 0; i < NUMSAMPLES; i++){
 			acc += adc_read();
 		}
-		//usb_writedata(acc);
-		debug_print("Wrote Data!\n\r");
+		usb_writedata(acc, meas_idx++);
+		debug_print("Sleeping\n\n\r");
 		
 		analog_off();
+		rtc_init();
 		standby();
 	}
 }
