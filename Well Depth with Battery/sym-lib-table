@@ -1,3 +1,4 @@
 (sym_lib_table
+  (version 7)
   (lib (name "well-monitor")(type "KiCad")(uri "${EWB}/well-monitor.kicad_sym")(options "")(descr ""))
 )
