@@ -1,7 +1,7 @@
 # Well-Monitor
 Well monitoring equipment for Engineers Without Borders
 
-This hardware is for projects that require more monitoring than is possible with manual measurements taken by community members. The well monitor is easily programmed to automatically log sensor values, and can be deployed into remote locations that are inconvenient to access regularly. 
+This hardware is for projects that require more monitoring than is possible with manual measurements taken by community members. The well monitor can be deployed into remote locations that are inconvenient to access regularly. 
 
 ## Well Depth with Battery \[WIP\]
 This device is intended for locations where mains power is not available. It uses a single 9V battery which will last for 10 years. It uses the same strain-guage based sensing technique and is the lowest cost solution available. 
@@ -28,20 +28,3 @@ The Depth Sensor is compatible with a wide variety of cheap strain gauges, and i
 
   <img src="https://github.com/hansgaensbauer/Well-Monitor/blob/main/Pictures/depth-sensor-bottom.jpg?raw=true" height="300">
  </p>
-
-## Well Depth with Mains Power
-This device is intended for installations that have access to 120-220V 50-60Hz power from a grid or solar installation. Well depth measurements are saved to an SD card, and the device is compatible with standard 4-20mA output water pressure transducers. 
-
-<p float="left">
-  <img src="https://github.com/hansgaensbauer/Well-Monitor/blob/main/Pictures/iso_view_v1.png?raw=true" height="400">
-
-  <img src="https://github.com/hansgaensbauer/Well-Monitor/blob/main/Pictures/photo_v0.jpg?raw=true" height="400">
- </p>
-
-The well monitor uses the CY7C65213A USB-Serial converter. Windows users should go to https://www.cypress.com/documentation/software-and-drivers/usb-serial-software-development-kit (registration/login required) to download and install the drivers. 
-
-The device can be programmed through the Arduino IDE. Under Tools -> Board, select Arduino Uno. 
-
-## Simulation
-The WaterSys-PV Notebook can simulate a complete photovoltaic pump installation by combining weather data with simulated conversion, pumping, and usage parameters. 
-
