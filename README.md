@@ -3,6 +3,9 @@ Well monitoring equipment for Engineers Without Borders
 
 This hardware is for projects that require more monitoring than is possible with manual measurements taken by community members. The well monitor works by weighing a pipe or other weight suspended within the well, since the apparent weight of the pipe is directly proportional to the amount of the pipe left above water.
 
+![A photo of the well monitors before packaging](https://github.com/hansgaensbauer/Well-Monitor/blob/main/pictures/20231202_203634.jpg?raw=true)
+![A well monitor in its packaging](https://github.com/hansgaensbauer/Well-Monitor/blob/main/pictures/20231202_212907.jpg?raw=true)
+
 ## Installation and Use
 The well monitor consists of two parts: a small "probe" that contains the load cell for weighing the pipe, and a separate box with the battery, USB flash drive, and readout electronics that gets mounted nearby. The probe requires a 3/8" hole to be drilled in the well cap over the location where the pipe is to be suspended. Remove one of the acetyl nuts on the bottom of the probe, thread the stainless-steel cable through the hole in the well cap, and reattach the nut on the other side to secure the probe. Mount the electronics box vertically against a wall or to a pole driven into the ground nearby. 
 
@@ -19,5 +22,7 @@ Since each well installation is different, the well monitor needs to be calibrat
 10. Suspend the "difference" weight dummy from the well monitor. Ajust the "gain" potentiometer until the voltage reads close to 3.3V (it is clamped so that it cannot exceed this voltage).
 11. Suspend the "minimum" weight dummy from the well monitor. Repeat step 9 to set the proper "zero weight" point.
 12. Suspend the "maximum" weight dummy from the well monitor. The voltage should be near 3.3V. Make small adjustments to the gain and offset so that the voltage is as close as possible to zero when the minimum weight is attached, and as close as possible to 3.3V when the maximum weight is attached.
+
+![Calibration Diagram](https://github.com/hansgaensbauer/Well-Monitor/blob/main/pictures/calibration.png?raw=true)
 
 Once the battery is connected, measurements are saved once every three hours to a USB flash drive. To read the data, remove the flash drive and connect it to a computer. The file 'welldata.txt' will contain one line for each measurement, consisting of a measurement counter (to keep track of when measurements are restarted) followed by the measurement. The measurements are in "ADC Counts": a reading of 0 corresponds to zero volts, or the maximum water level when the well monitor is calibrated. A value of 32768 corresponds to 3.3V, or the minimum water level when the well monitor is calibrated.
