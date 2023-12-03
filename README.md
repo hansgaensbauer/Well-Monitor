@@ -3,8 +3,8 @@ Well monitoring equipment for Engineers Without Borders
 
 This hardware is for projects that require more monitoring than is possible with manual measurements taken by community members. The well monitor works by weighing a pipe or other weight suspended within the well, since the apparent weight of the pipe is directly proportional to the amount of the pipe left above water.
 
-![A photo of the well monitors before packaging](https://github.com/hansgaensbauer/Well-Monitor/blob/main/pictures/20231202_203634.jpg?raw=true)
-![A well monitor in its packaging](https://github.com/hansgaensbauer/Well-Monitor/blob/main/pictures/20231202_212907.jpg?raw=true)
+<img src="https://github.com/hansgaensbauer/Well-Monitor/blob/main/pictures/20231202_203634.jpg?raw=true" alt="A photo of the well monitors before packaging" width=50% height=50%>
+<img src="https://github.com/hansgaensbauer/Well-Monitor/blob/main/pictures/20231202_212907.jpg?raw=true" alt="A well monitor in its packaging" width=50% height=50%>
 
 ## Installation and Use
 The well monitor consists of two parts: a small "probe" that contains the load cell for weighing the pipe, and a separate box with the battery, USB flash drive, and readout electronics that gets mounted nearby. The probe requires a 3/8" hole to be drilled in the well cap over the location where the pipe is to be suspended. Remove one of the acetyl nuts on the bottom of the probe, thread the stainless-steel cable through the hole in the well cap, and reattach the nut on the other side to secure the probe. Mount the electronics box vertically against a wall or to a pole driven into the ground nearby. 
